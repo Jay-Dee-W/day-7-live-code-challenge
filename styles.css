@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black ;
+    margin:0px 250px;
+    
+}
+.outter-container{
+    background-color: rgb(20, 20, 34);
+    height: 100vh;
+    padding: 40px;
+}
+.inner-container {
+    position: relative;
+    height: 100%;
+    background: url(photo-1585383234137-2367d3c5302d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5em;
+    padding: 30px 70px;
+   }
+
+.menu{
+    /* border: 2px solid green;     */
+    display: grid; 
+    grid-template-columns: 5fr .5fr .5fr .5fr .5fr;
+    color: white;
+    font-size: .8em;
+    align-items: center;
+    
+}
+
+.menu > p {
+    font-size: x-small;
+}
+.logo{
+    display: flex;
+    width: 50px;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo > img{
+    width: 50%;  
+} 
+
+.content {
+    /* height: 80%; */
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr 2fr;
+    /* height: 99%; */
+    width: 60%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px; 
+    padding-top: 150px;
+    padding-left: 60px ;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding-top: 50px;
+     border-radius: .4em;
+}
+
+.content > p {
+    font-size: x-small;
+    color: rgb(191, 189, 189);
+}
+
+.spacer {
+    /* border: 2px solid blue; */
+    width: 200px;
+    height: 10%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* padding: 20px; */
+    font-size: small;
+}
+
+button {
+    background: rgb(195,175,16);
+    background: linear-gradient(90deg, rgba(195,175,16,1) 0%, rgba(252,70,107,1) 35%, rgba(2,0,36,1) 98%);
+    border-radius: 10em;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: xx-small;
+    width: 15em;
+}
+
+.gradient{
+    background-color: #f3ec78;
+    background-image: linear-gradient(70deg, yellow, rgb(158, 112, 119), pink, purple);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+}
+
+.scroll{
+    position: absolute;
+    bottom: 50px;
+    right: 1px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-small;
+    padding: 40px;
+}
+
+.scroll > button {
+    background: none;
+    border: 1px solid white;
+    width: auto;
+    border-radius: 15em;
+}
